@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">S</div>
+                <div>
+                    <h1>SpendWise</h1>
+                    <p>Personal Finance</p>
+                </div>
+            </div>
+
+            <nav class="navigation" aria-label="Main navigation">
+
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💳</span>
+                    <span>Transactions</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🎯</span>
+                    <span>Budgets</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💰</span>
+                    <span>Savings</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-user">
+                <div class="user-avatar">J</div>
+
+                <div class="user-info">
+                    <strong>James</strong>
+                    <span>Personal Account</span>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div class="header-left">
+                    <p class="welcome">Good morning, James 👋</p>
+                    <h2>Financial Overview</h2>
+                </div>
+
+                <div class="header-right">
+
+                    <button class="notification-button" aria-label="Notifications">
+                        🔔
+                    </button>
+
+                    <button class="month-button">
+                        September 2026
+                        <span>▾</span>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- SUMMARY CARDS -->
+            <section class="summary-grid" aria-label="Financial summary">
+
+                <!-- Total Balance -->
+                <article class="summary-card balance-card">
+
+                    <div class="summary-top">
+                        <div>
+                            <p class="summary-label">Total Balance</p>
+                            <h3>$12,450.80</h3>
+                        </div>
+
+                        <div class="summary-icon balance-icon">
+                            💰
+                        </div>
+                    </div>
+
+                    <p class="change positive">
+                        ↑ 8.4% from last month
+                    </p>
+
+                </article>
+
+
+                <!-- Monthly Income -->
+                <article class="summary-card income-card">
+
+                    <div class="summary-top">
+                        <div>
+                            <p class="summary-label">Monthly Income</p>
+                            <h3>+$5,850.00</h3>
+                        </div>
+
+                        <div class="summary-icon income-icon">
+                            📥
+                        </div>
+                    </div>
+
+                    <p class="change positive">
+                        ↑ 4.2% from last month
+                    </p>
+
+                </article>
+
+
+                <!-- Monthly Expenses -->
+                <article class="summary-card expense-card">
+
+                    <div class="summary-top">
+                        <div>
+                            <p class="summary-label">Monthly Expenses</p>
+                            <h3>$3,240.50</h3>
+                        </div>
+
+                        <div class="summary-icon expense-icon">
+                            📤
+                        </div>
+                    </div>
+
+                    <p class="change positive">
+                        ↑ 2.1% from last month
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- SPENDING CATEGORIES -->
+            <section class="categories-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Spending Categories</h2>
+                        <p>Track where your money goes this month.</p>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <!-- FOOD -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon food-icon">
+                                🍔
+                            </div>
+
+                            <span class="percentage">
+                                78%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Food</h3>
+                            <p>Groceries &amp; dining</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$780.40</strong>
+                            <span>of $1,000</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress food-progress"
+                                style="width: 78%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- TRANSPORT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon transport-icon">
+                                🚗
+                            </div>
+
+                            <span class="percentage">
+                                64%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Transport</h3>
+                            <p>Fuel &amp; public transit</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$320.75</strong>
+                            <span>of $500</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress transport-progress"
+                                style="width: 64%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- RENT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon rent-icon">
+                                🏠
+                            </div>
+
+                            <span class="percentage">
+                                100%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Rent</h3>
+                            <p>Monthly housing</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$1,200.00</strong>
+                            <span>of $1,200</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress rent-progress"
+                                style="width: 100%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- ENTERTAINMENT -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon entertainment-icon">
+                                🎬
+                            </div>
+
+                            <span class="percentage">
+                                42%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Entertainment</h3>
+                            <p>Movies &amp; subscriptions</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$210.25</strong>
+                            <span>of $500</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress entertainment-progress"
+                                style="width: 42%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- SAVINGS -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon savings-icon">
+                                💵
+                            </div>
+
+                            <span class="percentage">
+                                68%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Savings</h3>
+                            <p>Emergency fund</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$1,360.00</strong>
+                            <span>of $2,000</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress savings-progress"
+                                style="width: 68%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- UTILITIES -->
+                    <article class="category-card" tabindex="0">
+
+                        <div class="category-top">
+
+                            <div class="category-icon utilities-icon">
+                                💡
+                            </div>
+
+                            <span class="percentage">
+                                63%
+                            </span>
+
+                        </div>
+
+                        <div class="category-info">
+                            <h3>Utilities</h3>
+                            <p>Electricity &amp; internet</p>
+                        </div>
+
+                        <div class="amount-row">
+                            <strong>$189.10</strong>
+                            <span>of $300</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress utilities-progress"
+                                style="width: 63%;">
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT TRANSACTIONS -->
+            <section class="transactions-section">
+
+                <div class="section-heading">
+
+                    <div>
+                        <h2>Recent Transactions</h2>
+                        <p>Your latest financial activity.</p>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="transaction-list">
+
+                    <!-- WHOLE FOODS -->
+                    <article class="transaction">
+
+                        <div class="transaction-icon food-icon">
+                            🍔
+                        </div>
+
+                        <div class="transaction-details">
+                            <strong>Whole Foods Market</strong>
+                            <span>Food • Today</span>
+                        </div>
+
+                        <strong class="transaction-amount expense">
+                            -$86.40
+                        </strong>
+
+                    </article>
+
+
+                    <!-- SHELL -->
+                    <article class="transaction">
+
+                        <div class="transaction-icon transport-icon">
+                            🚗
+                        </div>
+
+                        <div class="transaction-details">
+                            <strong>Shell Gas Station</strong>
+                            <span>Transport • Yesterday</span>
+                        </div>
+
+                        <strong class="transaction-amount expense">
+                            -$52.75
+                        </strong>
+
+                    </article>
+
+
+                    <!-- SALARY -->
+                    <article class="transaction">
+
+                        <div class="transaction-icon savings-icon">
+                            💰
+                        </div>
+
+                        <div class="transaction-details">
+                            <strong>Salary Deposit</strong>
+                            <span>Income • Sep 20</span>
+                        </div>
+
+                        <strong class="transaction-amount income">
+                            +$5,850.00
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
